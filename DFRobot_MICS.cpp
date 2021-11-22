@@ -383,11 +383,6 @@ DFRobot_MICS_I2C::DFRobot_MICS_I2C(TwoWire *pWire, uint8_t addr)
   this->_I2C_addr = addr;
 }
 
-DFRobot_MICS_I2C::DFRobot_MICS_I2C()
-{
-  _pWire = &Wire;
-  this->_I2C_addr = ADDRESS_0 ;
-}
 
 bool DFRobot_MICS_I2C::begin()
 {
