@@ -16,12 +16,6 @@
 
 #define ENABLE_DBG    0            // Open this macro to see the program running in detail
 
-#ifdef ENABLE_DBG
-  #define DBG(...) {Serial.print("[");Serial.print(__FUNCTION__); Serial.print("(): "); Serial.print(__LINE__); Serial.print(" ] "); Serial.println(__VA_ARGS__);}
-#else
-  #define DBG(...)
-#endif
-
 #define           ADDRESS_0                 0x75
 #define           ADDRESS_1                 0x76
 #define           ADDRESS_2                 0x77
