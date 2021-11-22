@@ -10,10 +10,11 @@
  */
 #ifndef __DFROBOT_MICS_H__
 #define __DFROBOT_MICS_H__
+
 #include <Arduino.h>
 #include <Wire.h>
 
-#define ENABLE_DBG                // Open this macro to see the program running in detail
+#define ENABLE_DBG    0            // Open this macro to see the program running in detail
 
 #ifdef ENABLE_DBG
   #define DBG(...) {Serial.print("[");Serial.print(__FUNCTION__); Serial.print("(): "); Serial.print(__LINE__); Serial.print(" ] "); Serial.println(__VA_ARGS__);}
